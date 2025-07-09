@@ -3,7 +3,6 @@
 
 ARG AWS_REGION=us-east-1
 
-#FROM 763104351884.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/pytorch-inference:2.4.0-gpu-py311-cu124-ubuntu22.04-ec2
 FROM 763104351884.dkr.ecr.${AWS_REGION}.amazonaws.com/pytorch-inference:2.3-cpu-py311
 
 RUN apt-get update \
@@ -27,7 +26,6 @@ RUN pip cache purge \
 COPY scripts/ /home/scripts/
 WORKDIR /home/scripts
 
-#RUN python /home/scripts/preload-model.py
 RUN chmod +x run_model.sh
 
 ENV TMPDIR="/tmp"
