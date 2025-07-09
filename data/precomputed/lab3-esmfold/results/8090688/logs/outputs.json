@@ -1,0 +1,8 @@
+{
+  "ESMFoldFlow.fasta": "s3://workshop-data-577821997243/lab3-esmfold/results/8090688/out/fasta/input.fasta",
+  "ESMFoldFlow.metrics": "s3://workshop-data-577821997243/lab3-esmfold/results/8090688/out/metrics/metrics.json",
+  "ESMFoldFlow.outputs": "s3://workshop-data-577821997243/lab3-esmfold/results/8090688/out/outputs/outputs.pt",
+  "ESMFoldFlow.pae": "s3://workshop-data-577821997243/lab3-esmfold/results/8090688/out/pae/pae.png",
+  "ESMFoldFlow.pdb": "s3://workshop-data-577821997243/lab3-esmfold/results/8090688/out/pdb/prediction.pdb",
+  "ESMFoldFlow.seq_info": "s3://workshop-data-577821997243/lab3-esmfold/results/8090688/out/seq_info/tmppw3d9b8l"
+}
