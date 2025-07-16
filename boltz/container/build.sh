@@ -12,7 +12,8 @@ aws ecr create-repository --repository-name $IMAGE_NAME --region $AWS_REGION --n
 aws ecr set-repository-policy --repository-name $IMAGE_NAME --policy-text file://omics-ecr-repo-policy.json
 
 echo "Building Docker image..."
-docker build --network sagemaker -t $IMAGE_NAME:$IMAGE_TAG .
+# docker build --network sagemaker -t $IMAGE_NAME:$IMAGE_TAG .
+docker build -t $IMAGE_NAME:$IMAGE_TAG .
 
 REGISTRY=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/
 ECR_URI=${REGISTRY}${IMAGE_NAME}:${IMAGE_TAG}
